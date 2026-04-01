@@ -133,9 +133,12 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('assets/images/bg.png') no-repeat center center/cover;
     /* Fallback generic background if the generated image is missing */
     background-color: var(--gray-dark);
+    background-image: url('assets/images/bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .hero::before {
@@ -442,6 +445,12 @@ footer p {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .hero {
+        height: 100vh;
+        height: 100svh;
+        background-position: center top;
+        background-attachment: scroll;
+    }
     .title { font-size: 2.5rem; }
     .title span { font-size: 3rem; }
     .section { padding: 4rem 0; }
@@ -450,6 +459,9 @@ footer p {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        background-position: center top;
+    }
     .title { font-size: 2rem; }
     .title span { font-size: 2.5rem; line-height: 1.2; }
     .pre-title { font-size: 0.9rem; letter-spacing: 2px; }
