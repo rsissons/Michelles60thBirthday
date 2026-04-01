@@ -73,9 +73,7 @@ a:hover {
     text-align: center;
     color: var(--gold);
     position: relative;
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
+    display: block;
 }
 
 .section-title::after {
