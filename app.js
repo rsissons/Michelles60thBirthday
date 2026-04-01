@@ -42,28 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fadeElements = document.querySelectorAll('.fade-in');
     fadeElements.forEach(el => observer.observe(el));
 
-    // RSVP Form Submission Handling
-    const rsvpForm = document.getElementById('rsvp-form');
-    const successMessage = document.getElementById('success-message');
-
-    if (rsvpForm) {
-        rsvpForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const guests = document.getElementById('guests').value;
-            
-            if(name && email && guests) {
-                rsvpForm.style.display = 'none';
-                successMessage.classList.remove('hidden');
-                
-                setTimeout(() => {
-                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }, 100);
-            }
-        });
-    }
+    // RSVP is now handled via external Google Form link
 
     // Auto-playing Carousel Logic
     const photoNames = [
