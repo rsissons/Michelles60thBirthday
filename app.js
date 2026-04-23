@@ -46,15 +46,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Auto-playing Carousel Logic
     const photoNames = [
-        "Photo1.JPG", "Photo10.jpg", "Photo11.jpg", "Photo12.jpg", "Photo13.jpg", 
-        "Photo14.png", "Photo15.JPG", "Photo16.jpg", "Photo17.jpg", "Photo18.jpg", 
-        "Photo19.jpg", "Photo2.jpg", "Photo20.jpg", "Photo21.jpg", "Photo22.jpg", 
-        "Photo23.jpg", "Photo24.jpg", "Photo25.JPG", "Photo26.png", "Photo27.jpg", 
-        "Photo28.jpg", "Photo29.jpg", "Photo3.jpg", "Photo30.jpg", "Photo31.jpg", 
-        "Photo32.jpg", "Photo33.JPG", "Photo34.jpg", "Photo35.jpg", "Photo36.jpg", 
-        "Photo37.JPG", "Photo38.png", "Photo39.jpg", "Photo4.jpg", "Photo40.jpg", 
-        "Photo41.jpg", "Photo42.JPG", "Photo43.jpg", "Photo44.jpg", "Photo5.jpg", 
-        "Photo6.jpg", "Photo7.jpg", "Photo8.jpg", "Photo9.jpg"
+        "Photo11.jpg", "Photo24.jpg", "PXL_20230705_035245275.jpg", "Photo6.jpg", "Photo34.jpg", 
+        "Photo28.jpg", "Photo36.jpg", "The Charthouse w the Murfetts 015.jpg", "Photo9.jpg", "Photo10.jpg", 
+        "Photo26.png", "Photo13.jpg", "Photo35.jpg", "Photo8.jpg", "Photo21.jpg", "Photo32.jpg", 
+        "IMG-20251217-WA0009.jpg", "Photo16.jpg", "Photo39.jpg", "PXL_20250917_023439358.MP.jpg", 
+        "Photo2.jpg", "Photo18.jpg", "Photo14.png", "Photo27.jpg", "Photo4.jpg", "Photo17.jpg", 
+        "The Charthouse w the Murfetts 030.jpg", "Photo30.jpg", "Photo12.jpg", "DSC_0609.JPG", 
+        "Photo19.jpg", "Photo33.JPG", "Photo42.JPG", "Photo29.jpg", "Photo22.jpg", "Photo23.jpg", 
+        "Photo5.jpg", "Photo25.JPG", "Photo3.jpg", "Photo43.jpg", "Photo40.jpg", "Photo15.JPG", 
+        "Ensenada_Cruise_Apr2005_334.JPG", "Photo41.jpg", "Photo44.jpg", "Photo20.jpg", "Photo38.png", 
+        "Photo7.jpg"
     ];
 
     const carouselImg = document.getElementById('carousel-img');
