@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Upload Sign</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 1in 0.5in;
+            color: #0A0A0A;
+            background: #fff;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            color: #D4AF37;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        .qr-container {
+            margin: 0 auto;
+            border: 6px solid #D4AF37;
+            padding: 1.5rem;
+            display: inline-block;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .qr-container img {
+            width: 450px;
+            height: 450px;
+            display: block;
+        }
+        .instructions {
+            margin-top: 4rem;
+            font-size: 1.8rem;
+            line-height: 2.2;
+            text-align: left;
+            display: inline-block;
+        }
+        .step {
+            font-weight: 600;
+            color: #D4AF37;
+            margin-right: 15px;
+        }
+        .note {
+            margin-top: 3rem;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #666;
+        }
+        @media print {
+            body { padding: 0; margin: 0.5in; }
+            .qr-container { box-shadow: none; }
+            @page { margin: 0.5in; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Share Your<br>Memories!</h1>
+    <h2>Help us capture Michelle's 60th Birthday Celebration</h2>
+
+    <div class="qr-container">
+        <!-- Using a black-on-white QR code for better printing and saving ink -->
+        <img src="https://quickchart.io/qr?text=https%3A%2F%2Fwww.dropbox.com%2Frequest%2Fa1yojrrh9zqxlqc4wzen&size=600&dark=000000&light=ffffff&margin=2" alt="QR Code">
+    </div>
+
+    <div class="instructions">
+        <p><span class="step">1.</span> Open your phone's camera</p>
+        <p><span class="step">2.</span> Scan the QR code above</p>
+        <p><span class="step">3.</span> Tap "Add files" to upload photos!</p>
+    </div>
+
+    <div class="note">
+        *If prompted for a name and email, you can just type "Guest" and "a@a.com"
+    </div>
+</body>
+</html>
