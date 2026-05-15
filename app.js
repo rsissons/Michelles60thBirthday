@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (typeof QRCode !== 'undefined') {
                 new QRCode(qrDiv, {
-                    text: 'https://photos.app.goo.gl/q47zijoeC5Sh2eU76',
+                    text: 'https://docs.google.com/forms/d/e/1FAIpQLSetMnU81sIpKBXbPXqYgrDWa5yX3r7UP-HcvpLRpsrBpx5Slg/viewform',
                     width: 220,
                     height: 220,
                     colorDark: '#D4AF37',
