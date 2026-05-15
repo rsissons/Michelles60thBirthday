@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (typeof QRCode !== 'undefined') {
                 new QRCode(qrDiv, {
-                    text: 'https://www.dropbox.com/request/a1yojrrh9zqxlqc4wzen',
+                    text: 'https://app.kululu.com/w0cs1b',
                     width: 220,
                     height: 220,
                     colorDark: '#D4AF37',
