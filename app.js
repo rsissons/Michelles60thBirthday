@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (typeof QRCode !== 'undefined') {
                 new QRCode(qrDiv, {
-                    text: 'https://rcoe-my.sharepoint.com/:f:/g/personal/rsissons_rcoe_us/IgBcq77wx8JVQohAiB5C6zzEAda3gngzpwRZD6hXaUOkoMU?e=1uQDji',
+                    text: 'https://www.dropbox.com/request/a1yojrrh9zqxlqc4wzen',
                     width: 220,
                     height: 220,
                     colorDark: '#D4AF37',
