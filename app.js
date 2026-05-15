@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (typeof QRCode !== 'undefined') {
                 new QRCode(qrDiv, {
-                    text: 'https://app.kululu.com/w0cs1b',
+                    text: 'https://photowallz.netlify.app/?upload=true',
                     width: 220,
                     height: 220,
                     colorDark: '#D4AF37',
