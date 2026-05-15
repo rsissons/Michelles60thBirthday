@@ -23,7 +23,10 @@
             <h1 class="title">Michelle's<br><span>60th Birthday</span></h1>
             <p class="subtitle">A night of fine drinks, great food, and wonderful company.</p>
             <p class="subtitle">Shhhh...It's a surprise.</p>
-            <a href="#gallery" class="cta-button smooth-scroll" style="margin-bottom: 2rem;">View Memories & Details</a>
+            <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-bottom:2rem;">
+                <a href="#gallery" class="cta-button smooth-scroll">View Memories</a>
+                <a href="#photos" class="cta-button smooth-scroll" style="background: linear-gradient(135deg,#AA8C2C 0%,#7a6520 100%);">📷 Share Photos</a>
+            </div>
 
             <div class="rsvp-container text-center"
                 style="margin-top: 2rem; padding-top: 3rem; border-top: 1px solid rgba(255,255,255,0.2); margin-left: auto; margin-right: auto;">
@@ -111,12 +114,62 @@
 
 
 
+        <section id="photos" class="section photos-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Share Your Memories</h2>
+                <p class="gallery-desc">Snap a photo at the party and add it to Michelle's shared album so everyone can relive the night!</p>
+
+                <div class="photos-layout">
+                    <!-- QR Code Card -->
+                    <div class="qr-card">
+                        <div class="qr-card-inner">
+                            <div class="qr-icon">📸</div>
+                            <h3>Scan to Upload</h3>
+                            <div class="qr-frame">
+                                <img src="assets/images/photo-upload-qr.png" alt="QR code to upload party photos to Michelle's shared Google Photos album" id="party-qr-code">
+                            </div>
+                            <p class="qr-caption">Point your phone camera at this code</p>
+                        </div>
+                    </div>
+
+                    <!-- Instructions Card -->
+                    <div class="upload-instructions">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-text">
+                                <h4>Open the Album</h4>
+                                <p>Scan the QR code or tap the button below to open Michelle's shared Google Photos album on your phone.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-text">
+                                <h4>Add Your Photos</h4>
+                                <p>Tap <strong>"Add photos"</strong> and select as many photos or videos from tonight as you'd like to share — multiple uploads welcome!</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-text">
+                                <h4>Relive the Magic</h4>
+                                <p>Your photos will be visible to everyone in the album so all the guests can enjoy the memories from tonight.</p>
+                            </div>
+                        </div>
+
+                        <a href="https://photos.app.goo.gl/q47zijoeC5Sh2eU76" target="_blank" rel="noopener noreferrer" class="cta-button upload-btn" id="open-album-btn">
+                            📷 Open Photo Album
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>A Celebration of 60 Wonderful Years</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="app.js"></script>
 </body>
 

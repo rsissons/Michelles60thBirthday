@@ -618,3 +618,160 @@ footer p {
     .carousel-container { height: 350px; }
     .carousel-btn { width: 40px; height: 40px; font-size: 20px; }
 }
+
+/* =========================================================================
+   Share Your Memories / Photo Upload Section
+   ========================================================================= */
+
+.photos-section {
+    background: linear-gradient(180deg, var(--black) 0%, var(--gray-dark) 100%);
+}
+
+.photos-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* QR Code Card */
+.qr-card {
+    display: flex;
+    justify-content: center;
+}
+
+.qr-card-inner {
+    background: var(--gray-dark);
+    border: 1px solid #333;
+    border-top: 3px solid var(--gold);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.1), 0 10px 30px rgba(0,0,0,0.5);
+    max-width: 340px;
+    width: 100%;
+    transition: box-shadow 0.4s ease;
+}
+
+.qr-card-inner:hover {
+    box-shadow: 0 0 60px rgba(212, 175, 55, 0.2), 0 15px 40px rgba(0,0,0,0.6);
+}
+
+.qr-icon {
+    font-size: 2.8rem;
+    margin-bottom: 0.75rem;
+    animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% { filter: drop-shadow(0 0 4px rgba(212,175,55,0.4)); }
+    50%       { filter: drop-shadow(0 0 12px rgba(212,175,55,0.8)); }
+}
+
+.qr-card-inner h3 {
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+}
+
+.qr-frame {
+    position: relative;
+    display: inline-block;
+    padding: 6px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35);
+    margin-bottom: 1.2rem;
+}
+
+.qr-frame img {
+    display: block;
+    width: 220px;
+    height: 220px;
+    border-radius: 6px;
+}
+
+.qr-caption {
+    font-size: 0.9rem;
+    color: var(--gold-light);
+    letter-spacing: 0.5px;
+    font-style: italic;
+}
+
+/* Step-by-step Instructions */
+.upload-instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: var(--black);
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
+    margin-top: 2px;
+}
+
+.step-text h4 {
+    font-size: 1.2rem;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+}
+
+.step-text p {
+    font-size: 1rem;
+    color: var(--gray-light);
+    line-height: 1.6;
+}
+
+.step-text strong {
+    color: var(--gold-light);
+}
+
+.upload-btn {
+    margin-top: 1rem;
+    align-self: flex-start;
+    font-size: 1.05rem;
+    padding: 1rem 2.2rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .photos-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .qr-card {
+        order: 1;
+    }
+    .upload-instructions {
+        order: 2;
+    }
+    .upload-btn {
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .qr-frame img {
+        width: 180px;
+        height: 180px;
+    }
+}

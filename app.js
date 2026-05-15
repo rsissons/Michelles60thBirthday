@@ -118,4 +118,30 @@ document.addEventListener('DOMContentLoaded', () => {
         carouselImg.style.opacity = 1;
         startCarousel();
     }
+    // QR Code: generate in-browser as fallback if static image fails
+    const qrImg = document.getElementById('party-qr-code');
+    const qrFrame = qrImg ? qrImg.parentElement : null;
+
+    if (qrImg && qrFrame) {
+        qrImg.addEventListener('error', () => {
+            // Image failed to load — generate QR code dynamically
+            qrImg.style.display = 'none';
+
+            const qrDiv = document.createElement('div');
+            qrDiv.id = 'qr-canvas-fallback';
+            qrDiv.style.cssText = 'width:220px;height:220px;background:#0A0A0A;border-radius:6px;overflow:hidden;';
+            qrFrame.appendChild(qrDiv);
+
+            if (typeof QRCode !== 'undefined') {
+                new QRCode(qrDiv, {
+                    text: 'https://photos.app.goo.gl/q47zijoeC5Sh2eU76',
+                    width: 220,
+                    height: 220,
+                    colorDark: '#D4AF37',
+                    colorLight: '#0A0A0A',
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+            }
+        });
+    }
 });
